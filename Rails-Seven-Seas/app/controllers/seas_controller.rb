@@ -1,5 +1,43 @@
+require_relative "../models/sea.rb"
 class SeasController < ApplicationController
-  #define your controller actions here
+ 
+ #define your controller actions here
+
+
+  def index
+    @seas = Sea.all
+  
+  end
+
+  def new
+    @sea = Sea.new
+    
+  end
+
+  def show
+    @sea = Sea.find(params[:id])
+
+  end
+
+  def edit
+    @sea = Sea.find(params[:id])
+
+  end
+
+  def destroy
+  Sea.find(params[:id]).destroy
+  redirect_to seas_path
+  end
+
+  def create 
+    # params.require(:sea).permit()
+    @sea = Sea.create(params[:sea])
+    redirect_to @sea
+  end
+
+  def update
+    Sea.find(params[:id]).update(params[:sea])
+  end
 
 
   private
