@@ -1,0 +1,11 @@
+<h1><%= @sea.name %></h1>
+<p><%= @sea.temperature %></p>
+<p><%= @sea.bio %></p>
+<img src="<%= @sea.image_url %>">
+<p><%= @sea.mood %></p>
+<p><%= @sea.favorite_color %></p>
+<p><%= @sea.scariest_creature %></p>
+<p><%= @sea.has_mermaids %></p>
+
+<%= link_to "Delete Sea", sea_path(@sea), method: :delete %>
+<%= link_to "Edit Sea", edit_sea_path(@sea) %>

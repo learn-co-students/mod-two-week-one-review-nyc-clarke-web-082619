@@ -1,0 +1,7 @@
+<h1>All Seas</h1>
+<ul>
+<% @seas.each do |s|%>
+    <li> <%= link_to(s.name, sea_path(s)) %> </li>
+    
+    <% end %>
+</ul>
