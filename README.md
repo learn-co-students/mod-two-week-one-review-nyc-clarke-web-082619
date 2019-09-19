@@ -25,7 +25,7 @@ Feel free to copy/paste where applicable from Sinatra to Rails. While copy-pasta
  - Use <code>rails s</code> to start a server and <code>rails c</code> to enter a console. Confirm your assumptions early and often!
 
 ## Instructions
- - Where do we start with any Sinatra or Rails application? <code>bundle install</code>, of course! Next, run <code>rails s</code> and go to http://localhost:3000/, to see a welcome page. Woohoo, you're on the Rails!
+ - Where do we start with any Sinatra or Rails application? <code>bundle install</code>, of course! Next, run <code>rails s</code> and go to http://localhost:3000/, to see a welcome page. Woohoo, you're on the Rail
  - You'll need a database populated with the seven lovely seas from the Sinatra application. Think about what code can be recycled from the Sinatra app's db folder.
  - In Rails, routes are separated from controllers. Because Rails is awesome, the routes.rb file contains a link to the Rails documentation for routes. Since you're building full CRUD for a sea, add all seven RESTful routes to this file.
  - Now, your job is to work out the MVC--Model, View, Controller--part of this app. When making your model, controller, and views, remember that naming conventions are very important in Rails!
