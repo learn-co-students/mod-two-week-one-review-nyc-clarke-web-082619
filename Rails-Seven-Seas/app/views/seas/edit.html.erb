@@ -24,5 +24,7 @@
   <%= f.check_box :has_mermaids %>
 
   <%=  f.submit %>
+  <%= button_to "Delete", { action: "destroy", id: @sea.id}, method: :delete%>
+<% end %>
 
-  <% end %>
+
